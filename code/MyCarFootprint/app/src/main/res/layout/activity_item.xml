@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-135dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <TextView
+            android:id="@+id/FootPrintName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="155dp"
+            android:layout_height="24dp"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintBottom_toBottomOf="@+id/DateText"
+            app:layout_constraintStart_toEndOf="@+id/DateText"
+            app:layout_constraintTop_toTopOf="@+id/DateText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/DateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Date:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/Date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FootPrintName" />
+
+        <TextView
+            android:id="@+id/FuelTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Fuel Type:"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DateText" />
+
+        <TextView
+            android:id="@+id/FuelType"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/fuel_type"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/FuelTypeText"
+            app:layout_constraintStart_toEndOf="@+id/FuelTypeText"
+            app:layout_constraintTop_toTopOf="@+id/FuelTypeText" />
+
+        <TextView
+            android:id="@+id/CarbonFootprintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Carbon Footprint:"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FuelTypeText" />
+
+        <TextView
+            android:id="@+id/CarbonUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="192dp"
+            android:text="kg CO2"
+            app:layout_constraintBottom_toBottomOf="@+id/CarbonAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CarbonAmount"
+            app:layout_constraintTop_toTopOf="@+id/CarbonAmount"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/CarbonAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/co2_footprint"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CarbonFootprintText"
+            app:layout_constraintEnd_toStartOf="@+id/CarbonUnitText"
+            app:layout_constraintStart_toEndOf="@+id/CarbonFootprintText"
+            app:layout_constraintTop_toTopOf="@+id/CarbonFootprintText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/CostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Cost:"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CarbonFootprintText" />
+
+        <TextView
+            android:id="@+id/CostAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/cost_amount"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CostText"
+            app:layout_constraintStart_toEndOf="@+id/CostText"
+            app:layout_constraintTop_toTopOf="@+id/CostText"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/CostUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="CAD"
+            app:layout_constraintBottom_toBottomOf="@+id/CostAmount"
+            app:layout_constraintStart_toEndOf="@+id/CostAmount"
+            app:layout_constraintTop_toTopOf="@+id/CostAmount"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/CostText"
+            tools:layout_editor_absoluteX="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

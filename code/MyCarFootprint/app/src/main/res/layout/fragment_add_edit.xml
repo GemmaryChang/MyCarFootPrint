@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemFragment">
+
+    <TextView
+        android:id="@+id/Txt_StationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="14sp"
+        android:text="GAS STATION NAME:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/GasStationName"
+        app:layout_constraintEnd_toStartOf="@+id/GasStationName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/GasStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="up to 30 characters"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/Txt_StationName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Txt_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="34sp"
+        android:text="DATE:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FootPrintDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_StationName" />
+
+    <TextView
+        android:id="@+id/Txt_FuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="FUEL TYPE:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_Date" />
+
+    <Spinner
+        android:id="@+id/spinner_fueltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Txt_FuelType"
+        app:layout_constraintStart_toEndOf="@+id/Txt_FuelType"
+        app:layout_constraintTop_toBottomOf="@+id/FootPrintDate" />
+
+    <TextView
+        android:id="@+id/Txt_litreAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="AMOUNT IN LITRE:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_FuelType" />
+
+    <EditText
+        android:id="@+id/LitreAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="positive integer"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/Txt_litreAmount"
+        app:layout_constraintStart_toEndOf="@+id/Txt_litreAmount" />
+
+    <TextView
+        android:id="@+id/Txt_PriceLitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PRICE PER LITRE:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_litreAmount" />
+
+    <EditText
+        android:id="@+id/LitrePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="positive with two decimals"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/Txt_PriceLitre"
+        app:layout_constraintStart_toEndOf="@+id/Txt_PriceLitre"
+        app:layout_constraintTop_toBottomOf="@+id/LitreAmount" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_confirm"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:text="Confirm"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/FootPrintDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="yyyy-mm-dd"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/Txt_Date"
+        app:layout_constraintTop_toBottomOf="@+id/GasStationName" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_cancel"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cancel"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btn_confirm"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

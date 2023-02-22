@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">gemmary-MyCarFootprint</string>
+    <string name="cost_amount" />
+    <string name="co2_footprint" />
+    <string name="fuel_type" />
+    <string name="btn_add">+</string>
+</resources>

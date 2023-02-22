@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="GasStationName" type="id" />
+    <item name="Txt_StationName" type="id" />
+    <item name="Txt_Date" type="id" />
+    <item name="date" type="id" />
+    <item name="Txt_FuelType" type="id" />
+    <item name="spinner_fueltype" type="id" />
+    <item name="Txt_litreAmount" type="id" />
+    <item name="LitreAmount" type="id" />
+    <item name="Txt_PriceLitre" type="id" />
+    <item name="LitrePrice" type="id" />
+    <item name="btn_confirm" type="id" />
+</resources>
